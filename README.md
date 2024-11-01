@@ -30,4 +30,41 @@ git clone <your-repo-url>
 cd <your-repo-folder>
 ```
 
-### Step 2: Clone the Repository
+### Step 2: Install Dependencies
+
+Once inside the project directory, install all necessary packages:
+
+```bash
+npm install
+```
+
+### Step 3: Set Up Environment Variables
+
+Create a `.env` file in the root directory. Add both the discord and weather tokens as follows:
+
+```bash
+DISCORD_KEY=<your-discord-token>
+WEATHER_KEY=<your-weather-token>
+```
+
+Remember to include a `.gitignore` file that includes a `.env` if you plan on pushing your version of the code onto GitHub
+
+### Step 4: Run the Bot
+
+Start the bot with the following command:
+
+```bash
+node index.js
+```
+
+A message should pop up in the console, indicating that the bot is online.
+
+### Step 5: Add the Bot to a Discord Server
+
+Now that the bot is running, invite it to your server using the invite link from the Developer Portal. 
+
+You can generate this link under OAuth2 > URL Generator by selecting bot under OAuth2 Scopes and setting the permissions you need.
+
+Check off every Privileged Gateway Intents option. This grants the bot permission to send and read messages into the server.
+
+Use the `!commands` command to display list of possible commands.
