@@ -1,0 +1,12 @@
+{
+  "name": "chan-bot",
+  "version": "1.0.0",
+  "description": "discord bot for personal project",
+  "main": "route.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dc",
+  "license": "ISC"
+}
