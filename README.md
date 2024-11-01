@@ -1,35 +1,30 @@
-How to Install and Run Chan-Bot Locally
+# How to Install and Run Chan-Bot Locally
 
-Prerequisites:
-Node.js (version 16.6 or higher) - Download Node.js
-Discord Bot Token - Create a bot on the Discord Developer Portal, get the bot token, and enable required intents.
-Weather API Token - Go to https://weatherstack.com/ and create a new account. Create a new API token for free.
+This guide will walk you through the setup for running Chan-Bot on your local machine.
 
-Step 1: Clone the Repository
-First, clone the repository to your local machine:
+---
 
-`git clone <your-repo-url>`
-`cd <your-repo-folder>`
+### Prerequisites
 
-Step 2: Install Dependencies
-In the <your-repo-folder> directory, install all necessary packages:
-`npm install`
+1. **Node.js** (version 16.6 or higher)
+   - You can download Node.js from [https://nodejs.org/](https://nodejs.org/).
 
-Step 3: Set Up Environment Variables
-Create a .env file in the root directory of the project and add both of your tokens:
-DISCORD_KEY=your-bot-token-here
-WEATHER_KEY=your-weather-token-here
+2. **Discord Bot Token**
+   - Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications).
+   - Go to **Applications** > **New Application** > Give it a name and save.
+   - In the **Bot** section, create a bot by selecting **Add Bot**. Save the token displayed here.
+   - Under **Privileged Gateway Intents**, enable **Server Members Intent** if your bot will be welcoming members.
 
-Step 4: Run the Bot
-Start the bot with the following command:
-node index.js
+3. **Weather API Token**
+   - Go to [Weatherstack](https://weatherstack.com/).
+   - Create an account and generate a free API token.
 
-You should see a message in the console like Logged in as <bot-name>!, indicating that the bot is online.
+---
 
-Step 5: Test the Bot in Discord
-Invite the bot to your server using the invite link from the Developer Portal, and test its commands in a channel.
-Here are all available commands:
-  - !hello: Prints 'Hello, World!' to the current channel
-  - !commands: Display all available commands
-  - !announce <message>: Send a message to the #announcements channel if it's available
-  - !weather <city>: Display soome stats about the weather at <city> if it is valid
+### Step 1: Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
