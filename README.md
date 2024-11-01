@@ -13,7 +13,7 @@ This guide will walk you through the setup for running Chan-Bot on your local ma
    - Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications).
    - Go to **Applications** > **New Application** > Give it a name and save.
    - In the **Bot** section, create a bot by selecting **Add Bot**. Save the token displayed here.
-   - Under **Privileged Gateway Intents**, enable **Server Members Intent** if your bot will be welcoming members.
+   - Under **Privileged Gateway Intents**, enable every permission available. This is needed for the bot to function properly
 
 3. **Weather API Token**
    - Go to [Weatherstack](https://weatherstack.com/).
@@ -64,7 +64,5 @@ A message should pop up in the console, indicating that the bot is online.
 Now that the bot is running, invite it to your server using the invite link from the Developer Portal. 
 
 You can generate this link under OAuth2 > URL Generator by selecting bot under OAuth2 Scopes and setting the permissions you need.
-
-Check off every Privileged Gateway Intents option. This grants the bot permission to send and read messages into the server.
 
 Use the `!commands` command to display list of possible commands.
