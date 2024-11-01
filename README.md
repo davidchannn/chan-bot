@@ -28,3 +28,6 @@ Clone this repository to your local machine:
 ```bash
 git clone <your-repo-url>
 cd <your-repo-folder>
+```
+
+### Step 2: Clone the Repository
