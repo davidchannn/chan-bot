@@ -59,5 +59,8 @@ export const getWeather = (message, weatherKey) => {
 
     logIn(cityName)
         .then((data) => printInformation(data))
-        .catch((error) => console.error("Error: " + error));
+        .catch((error) => {
+            message.reply('Something went wrong. Try again soon.');
+            console.error("Error: " + error)
+        });
 }
