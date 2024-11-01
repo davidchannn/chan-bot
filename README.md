@@ -26,7 +26,7 @@ This guide will walk you through the setup for running Chan-Bot on your local ma
 Clone this repository to your local machine:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/davidchannn/chan-bot.git
 cd <your-repo-folder>
 ```
 
